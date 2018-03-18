@@ -46,6 +46,7 @@ namespace CBRE_Request {
             dgv.AllowUserToOrderColumns = false;
             dgv.AllowUserToResizeColumns = true;
             dgv.Enabled = false;
+            dgv.ScrollBars = ScrollBars.Both;
             
             var cellTemplate = new DataGridViewTextBoxCell();
             dgv.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
