@@ -42,6 +42,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.startToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.normalLogViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quickLogViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.desktopShortcutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,7 +52,7 @@
             this.cboUrgency = new System.Windows.Forms.ComboBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.StatusBar = new System.Windows.Forms.ToolStripStatusLabel();
-            this.normalLogViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -125,7 +126,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.MaximumSize = new System.Drawing.Size(616, 24);
             this.menuStrip1.MinimumSize = new System.Drawing.Size(616, 24);
@@ -174,6 +176,13 @@
             this.stopToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.stopToolStripMenuItem.Text = "Stop";
             this.stopToolStripMenuItem.Click += new System.EventHandler(this.stopToolStripMenuItem_Click);
+            // 
+            // normalLogViewToolStripMenuItem
+            // 
+            this.normalLogViewToolStripMenuItem.Name = "normalLogViewToolStripMenuItem";
+            this.normalLogViewToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.normalLogViewToolStripMenuItem.Text = "Normal Log View";
+            this.normalLogViewToolStripMenuItem.Click += new System.EventHandler(this.normalLogViewToolStripMenuItem_Click);
             // 
             // quickLogViewToolStripMenuItem
             // 
@@ -246,12 +255,12 @@
             this.StatusBar.Size = new System.Drawing.Size(116, 17);
             this.StatusBar.Text = "Little Request Status:";
             // 
-            // normalLogViewToolStripMenuItem
+            // aboutToolStripMenuItem
             // 
-            this.normalLogViewToolStripMenuItem.Name = "normalLogViewToolStripMenuItem";
-            this.normalLogViewToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.normalLogViewToolStripMenuItem.Text = "Normal Log View";
-            this.normalLogViewToolStripMenuItem.Click += new System.EventHandler(this.normalLogViewToolStripMenuItem_Click);
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -316,6 +325,7 @@
         private System.Windows.Forms.ToolStripStatusLabel StatusBar;
         private System.Windows.Forms.ToolStripMenuItem quickLogViewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem normalLogViewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 
